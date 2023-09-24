@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node postbuild.js",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.4.5"
+    "rollup-plugin-copy": "^3.5.0",
+    "three": "^0.132.2",
+    "vite": "^4.4.5",
+    "vite-plugin-copy": "^0.1.6"
   }
 }
