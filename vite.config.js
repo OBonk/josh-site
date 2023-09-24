@@ -1,4 +1,5 @@
 export default {
+    base: '/josh-site/',
     build: {
         rollupOptions: {
           input: {
