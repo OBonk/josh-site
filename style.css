@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: DM Sans, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -75,7 +75,17 @@
 .model-wrapper p {
   flex: 1;
 }
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Creates two columns */
+  gap: 16px; /* Space between grid items */
+}
 
+.media-grid img,
+.media-grid video {
+  max-width: 100%; /* Makes sure the media fits within the grid cell */
+  height: auto;
+}
 /* Media query for light theme */
 @media (prefers-color-scheme: light) {
   :root {
